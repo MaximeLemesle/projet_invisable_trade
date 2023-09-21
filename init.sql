@@ -19,9 +19,9 @@ CREATE TABLE Objet(
 );
 
 CREATE TABLE Enchere(
-   id VARCHAR(255) ,
+   id SERIAL ,
    date_debut DATE NOT NULL,
-   data_fin DATE NOT NULL,
+   date_fin DATE NOT NULL,
    prix_actuel NUMERIC(15,2)  ,
    prix_initial NUMERIC(15,2)   NOT NULL,
    id_objet SERIAL  NOT NULL,
