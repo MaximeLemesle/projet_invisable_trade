@@ -23,9 +23,8 @@
     width: 100%;
     color: #060B13;
     text-align: justify;
-    font-family: Helvetica;
+    font-family: Helvetica Bold;
     font-size: 48px;
-    font-weight: 700;
     letter-spacing: -1px;
     text-transform: uppercase;
     margin: 0;
@@ -71,10 +70,20 @@
 
 .h3-large {
     color: #060B13;
-    font-family: Helvetica;
+    font-family: Helvetica Bold;
     font-size: 24px;
-    font-weight: 600;
     margin: 0;
+}
+
+body {
+    color: #060B13;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+a {
+    color: #060B13;
+    text-decoration: none;
 }
 
 /* --- Components --- */
@@ -138,7 +147,6 @@
     background: #060B13;
 }
 
-
 /* --- Header --- */
 
 .header {
@@ -150,10 +158,9 @@
 }
 
 .header .menu {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica Bold;
     color: #060B13;
     font-size: 16px;
-    font-weight: 600;
     width: 200px;
     text-align: center;
 }
@@ -334,9 +341,8 @@
 
 .desc-pdt .prix-pdt {
     color: #060B13;
-    font-family: Helvetica;
+    font-family: Helvetica Bold;
     font-size: 24px;
-    font-weight: 500;
 }
 
 .desc-pdt .text-pdt {
@@ -365,4 +371,67 @@
 
 /* ------- NEWENCHERE ------- */
 
-/* --- Breadcrumbs --- */
+/* --- Formulaire --- */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+} 
+
+.form-image {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px;
+    background: #ECF1F9;
+}
+
+.form-image .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: #060B13 solid 1px;
+    font-size: 16px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px;
+    background: #ECF1F9;
+}
+
+.form .valider {
+    display: flex;
+    justify-content: end;
+    padding: 12px 0;
+}
+
+.form .form-item {
+    display: flex;
+}
+
+.form .form-item label {
+    width: 50%;
+}
+
+.form .form-item input {
+    width: 50%;
+    background: transparent;
+    border: none;
+    border-bottom: rgb(6,11,19,.3) solid 1px;
+    padding: 4px 8px;
+}
+
+.form .form-item input#desc {
+    padding-bottom: 150px;
+}
+
+.form-content .separator {
+    width: 100%;
+    height: 1px;
+    background: #060B13;
+}
