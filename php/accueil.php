@@ -60,9 +60,7 @@
                                 <img src=\"../assets/images/heart.png\" alt=\"like\">
                             </div>
                             <div class=\"cta\">
-                                <button class=\"btn-white\">
-                                    Enchérir
-                                </button>
+                                <a href=\"./details.php\" class=\"btn-white\">Enchérir</a>
                             </div>
                         </div>
 
