@@ -60,7 +60,7 @@
                                 <img src=\"../assets/images/heart.png\" alt=\"like\">
                             </div>
                             <div class=\"cta\">
-                                <a href=\"./details.php\" class=\"btn-white\">Enchérir</a>
+                                <a href=\"./details.php?id=".$ench[5]."\" class=\"btn-white\">Enchérir</a>
                             </div>
                         </div>
 
