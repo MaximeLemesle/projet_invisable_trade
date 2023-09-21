@@ -1,4 +1,8 @@
-<?php require_once './header.php'; ?>
+<?php 
+    require_once './header.php'; 
+    require_once './bdd/enchere.php';
+    require_once './bdd/objet.php';
+?>
 
     <main class="container">
 
@@ -48,182 +52,31 @@
 
             <div class="line">
 
-                <div class="article">
-                    <div class="image">
-                        <div class="like">
-                            <img src="../assets/images/heart.png" alt="like">
+            <?php   
+                foreach (list_enchere() as $ench) {
+                    echo "<div class=\"article\">
+                        <div class=\"image\">
+                            <div class=\"like\">
+                                <img src=\"../assets/images/heart.png\" alt=\"like\">
+                            </div>
+                            <div class=\"cta\">
+                                <button class=\"btn-white\">
+                                    Enchérir
+                                </button>
+                            </div>
                         </div>
-                        <div class="cta">
-                            <button class="btn-white">
-                                Enchérir
-                            </button>
+
+                        <div class=\"description\">
+                            <h3 class=\"h3\">
+                                ".object_info($ench[5])[0][1]."
+                            </h3>
+                            <p class=\"prix\">
+                                ".$ench[3]."€
+                            </p>
                         </div>
-                    </div>
-
-                    <div class="description">
-                        <h3 class="h3">
-                            Nom du Produit 123
-                        </h3>
-                        <p class="prix">
-                            350€
-                        </p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="image">
-                        <div class="like">
-                            <img src="../assets/images/heart.png" alt="like">
-                        </div>
-                        <div class="cta">
-                            <button class="btn-white">
-                                Enchérir
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="description">
-                        <h3 class="h3">
-                            Nom du Produit 123
-                        </h3>
-                        <p class="prix">
-                            350€
-                        </p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="image">
-                        <div class="like">
-                            <img src="../assets/images/heart.png" alt="like">
-                        </div>
-                        <div class="cta">
-                            <button class="btn-white">
-                                Enchérir
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="description">
-                        <h3 class="h3">
-                            Nom du Produit 123
-                        </h3>
-                        <p class="prix">
-                            350€
-                        </p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="image">
-                        <div class="like">
-                            <img src="../assets/images/heart.png" alt="like">
-                        </div>
-                        <div class="cta">
-                            <button class="btn-white">
-                                Enchérir
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="description">
-                        <h3 class="h3">
-                            Nom du Produit 123
-                        </h3>
-                        <p class="prix">
-                            350€
-                        </p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="image">
-                        <div class="like">
-                            <img src="../assets/images/heart.png" alt="like">
-                        </div>
-                        <div class="cta">
-                            <button class="btn-white">
-                                Enchérir
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="description">
-                        <h3 class="h3">
-                            Nom du Produit 123
-                        </h3>
-                        <p class="prix">
-                            350€
-                        </p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="image">
-                        <div class="like">
-                            <img src="../assets/images/heart.png" alt="like">
-                        </div>
-                        <div class="cta">
-                            <button class="btn-white">
-                                Enchérir
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="description">
-                        <h3 class="h3">
-                            Nom du Produit 123
-                        </h3>
-                        <p class="prix">
-                            350€
-                        </p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="image">
-                        <div class="like">
-                            <img src="../assets/images/heart.png" alt="like">
-                        </div>
-                        <div class="cta">
-                            <button class="btn-white">
-                                Enchérir
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="description">
-                        <h3 class="h3">
-                            Nom du Produit 123
-                        </h3>
-                        <p class="prix">
-                            350€
-                        </p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="image">
-                        <div class="like">
-                            <img src="../assets/images/heart.png" alt="like">
-                        </div>
-                        <div class="cta">
-                            <button class="btn-white">
-                                Enchérir
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="description">
-                        <h3 class="h3">
-                            Nom du Produit 123
-                        </h3>
-                        <p class="prix">
-                            350€
-                        </p>
-                    </div>
-                </div>
-
+                    </div>";
+                }
+                ?>
             </div>
 
         </section>
