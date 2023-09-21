@@ -2,6 +2,7 @@
 
 require_once './bdd/enchere.php';
 
+//Récupération des infos du form
 $nom = $_POST['titre'];
 $description = $_POST['desc'];
 $image = $_FILES["img"]['name'];
@@ -11,8 +12,8 @@ $prix = $_POST['prix'];
 $id_user = 1;
 
 
-$target_dir = "./images/";
-$target_file = "./images/" . basename($_FILES["img"]["name"]);
+$target_dir = "./images/";//Le chemin d'enregistrement des images
+$target_file = $target_dir . basename($_FILES["img"]["name"]);
 $uploadOk = 1;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -82,6 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+//Création de l'enchère avec les infos du form
 create_enchere($date_debut, $date_fin, $prix, $id_user, $nom, $description, $image);
 
 ?>

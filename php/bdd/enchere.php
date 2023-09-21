@@ -8,24 +8,25 @@ function list_enchere()
     $sql = 'SELECT * FROM enchere';
     //Exécution de la Requête
     $query = $GLOBALS['pdo']->query($sql);
-    //Récuperation 
+    //Récupération du résultat
     $list = $query->fetchAll();
-
+    //Renvoie des données
     return $list;
 }
 
 function create_enchere($date_debut, $date_fin, $prix, $id_users, $nom, $description, $image)
 {
+    //Appel du fichier objet.php, cela sert pour la création de l'objet lié à l'enchère.
     require 'objet.php';
+    $id_objet = create_object($nom, $description, $image, 1);//Création de l'objet
 
-    $id_objet = create_object($nom, $description, $image, 1);
-    
     //Requête SQL
     $sql = 'insert into enchere(date_debut,date_fin,prix_actuel,prix_initial,id_objet, id_users)
             values(:date_debut, :date_fin, :prix_actuel, :prix_initial, :id_objet, :id_users)';
 
+    //Préparation de la requête
     $statement = $GLOBALS['pdo']->prepare($sql);
-
+    //Exécution de la Requête
     $statement->execute([
         'date_debut' => $date_debut,
         'date_fin' => $date_fin,
@@ -34,6 +35,4 @@ function create_enchere($date_debut, $date_fin, $prix, $id_users, $nom, $descrip
         'id_objet' => $id_objet,
         'id_users' => $id_users
     ]);
-
-    
 }
