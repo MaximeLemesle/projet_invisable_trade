@@ -1,10 +1,29 @@
+/* --- Fonts --- */
+
+@font-face {
+    font-family: "Helvetica";
+    src:
+      local("Helvetica"),
+      url("../assets/fonts/Helvetica-Font/webfontkit-20230921-031522/helvetica-webfont.woff2") format("woff2"),
+      url("../assets/fonts/Helvetica-Font/webfontkit-20230921-031522/helvetica-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Helvetica Bold";
+    src:
+      local("Helvetica Bold"),
+      url("../assets/fonts/Helvetica-Font/webfontkit-20230921-031522/helvetica-bold-webfont.woff2") format("woff2"),
+      url("../assets/fonts/Helvetica-Font/webfontkit-20230921-031522/helvetica-bold-webfont.woff") format("woff");
+}
+  
+
 /* --- Headings --- */
 
 .h1 {
     width: 100%;
     color: #060B13;
     text-align: justify;
-    font-family: Helvetica Neue;
+    font-family: Helvetica;
     font-size: 48px;
     font-weight: 700;
     letter-spacing: -1px;
@@ -18,7 +37,7 @@
 
 .h2 {
     color: #060B13;
-    font-family: Helvetica Neue;
+    font-family: Helvetica;
     font-size: 48px;
     font-weight: 500;
     margin: 0;
@@ -26,7 +45,7 @@
 
 .h2-white {
     color: #ECF1F9;
-    font-family: Helvetica Neue;
+    font-family: Helvetica;
     font-size: 48px;
     font-weight: 500;
     margin: 0;
@@ -35,7 +54,7 @@
 .h3,
 .prix {
     color: #060B13;
-    font-family: Helvetica Neue;
+    font-family: Helvetica;
     font-size: 18px;
     font-weight: 400;
     margin: 0;
@@ -44,7 +63,7 @@
 .h3-white,
 .prix-white {
     color: #ECF1F9;
-    font-family: Helvetica Neue;
+    font-family: Helvetica;
     font-size: 24px;
     font-weight: 500;
     margin: 0;
@@ -52,7 +71,7 @@
 
 .h3-large {
     color: #060B13;
-    font-family: Helvetica Neue;
+    font-family: Helvetica;
     font-size: 24px;
     font-weight: 600;
     margin: 0;
@@ -342,3 +361,8 @@
     flex-direction: column;
     gap: 32px;
 }
+
+
+/* ------- NEWENCHERE ------- */
+
+/* --- Breadcrumbs --- */
