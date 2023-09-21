@@ -12,7 +12,7 @@
 
             <h1 class="h1">Créer une nouvelle enchère</h1>
 
-            <form action="" method="get" class="form">
+            <form action="CreateEnchere.php" method="post" class="form">
 
                 <div class="form-image">
                     <label for="img">Ajouter les images de votre produit invisible</label>
@@ -57,7 +57,7 @@
 
                     <div class="form-item">
                         <label for="prix">Prix minimum de l'enchère</label>
-                        <input type="number" name="prix" id="prix" required placeholder="0,00€"/>
+                        <input type="number" name="prix" id="prix" step="0.01" required placeholder="0,00€"/>
                     </div>
 
                 </div>
