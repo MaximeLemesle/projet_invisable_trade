@@ -4,34 +4,36 @@ require_once 'connect.php';
 
 function list_enchere()
 {
-    // $pdo = require_once 'connect.php';
-
+    //Requête SQL
     $sql = 'SELECT * FROM enchere';
-
+    //Exécution de la Requête
     $query = $GLOBALS['pdo']->query($sql);
-
+    //Récuperation 
     $list = $query->fetchAll();
 
     return $list;
 }
 
-function create_enchere($date_debut, $date_fin, $prix_actuel, $prix_initial, $id_objet, $id_user)
+function create_enchere($date_debut, $date_fin, $prix, $id_users, $nom, $description, $image)
 {
+    require 'objet.php';
 
-
-    $sql = 'insert into enchere(date_debut,date_fin,prix_actuel,prix_initial,id_objet, id_user)
-            values(:date_debut, :date_fin, :prix_actuel, :prix_initial, :id_objet, :id_user)';
+    $id_objet = create_object($nom, $description, $image, 1);
+    
+    //Requête SQL
+    $sql = 'insert into enchere(date_debut,date_fin,prix_actuel,prix_initial,id_objet, id_users)
+            values(:date_debut, :date_fin, :prix_actuel, :prix_initial, :id_objet, :id_users)';
 
     $statement = $GLOBALS['pdo']->prepare($sql);
 
     $statement->execute([
         'date_debut' => $date_debut,
         'date_fin' => $date_fin,
-        'prix_actuel' => $prix_actuel,
-        'prix_initial' => $prix_initial,
+        'prix_actuel' => $prix,
+        'prix_initial' => $prix,
         'id_objet' => $id_objet,
-        'id_user' => $id_user
+        'id_users' => $id_users
     ]);
 
-    echo "ok";
+    
 }

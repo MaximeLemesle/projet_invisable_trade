@@ -12,7 +12,7 @@
 
             <h1 class="h1">Créer une nouvelle enchère</h1>
 
-            <form action="CreateEnchere.php" method="post" class="form">
+            <form action="CreateEnchere.php" method="post" class="form" enctype="multipart/form-data">
 
                 <div class="form-image">
                     <label for="img">Ajouter les images de votre produit invisible</label>

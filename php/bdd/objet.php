@@ -14,7 +14,12 @@ function create_object($nom, $description, $image, $id_users)
         'image' => $image,
         'id_users' => $id_users,
     ]);
+
+    return $GLOBALS['pdo']->lastInsertId();
+
 }
+
+
 
 function object_info($id)
 {
@@ -29,3 +34,4 @@ function object_info($id)
 
     return $info;
 }
+?>
