@@ -1,0 +1,344 @@
+/* --- Headings --- */
+
+.h1 {
+    width: 100%;
+    color: #060B13;
+    text-align: justify;
+    font-family: Helvetica Neue;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.h1-home {
+    width: 45%;
+}
+
+.h2 {
+    color: #060B13;
+    font-family: Helvetica Neue;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.h2-white {
+    color: #ECF1F9;
+    font-family: Helvetica Neue;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.h3,
+.prix {
+    color: #060B13;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.h3-white,
+.prix-white {
+    color: #ECF1F9;
+    font-family: Helvetica Neue;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.h3-large {
+    color: #060B13;
+    font-family: Helvetica Neue;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* --- Components --- */
+
+.btn-white {
+    border: solid 1px #ECF1F9;
+    border-radius: 4px;
+    background: transparent;
+    color: #ECF1F9;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 64px;
+    width: fit-content;
+    transition: all .3s;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.btn-white:hover {
+    background: #ECF1F9;
+    color: #9CACC9;
+}
+
+.btn {
+    border: solid 1px #3D598F;
+    border-radius: 4px;
+    background: transparent;
+    color: #060B13;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 64px;
+    width: fit-content;
+    transition: all .3s;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.btn:hover {
+    background: #3D598F;
+    color: #ECF1F9;
+}
+
+.btn-primaire {
+    border: solid 1px #3D598F;
+    border-radius: 4px;
+    background: #3D598F;
+    color: #ECF1F9;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 64px;
+    width: fit-content;
+    transition: all .3s;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.btn-primaire:hover {
+    background: #060B13;
+}
+
+
+/* --- Header --- */
+
+.header {
+    background: #ECF1F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 100px 12px;
+}
+
+.header .menu {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #060B13;
+    font-size: 16px;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+
+/* --- Main --- */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+}
+
+/* ------- ACCUEIL ------- */
+
+/* --- Title --- */
+
+.title {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+
+/* --- Aricles en avant --- */
+
+.top {
+    display: flex;
+    gap: 16px;
+}
+
+.top .article-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #9CACC9;
+    padding: 24px 32px;
+    width: 50%;
+    height: 500px;
+}
+
+.top .article-top:first-child {
+    background: #3D598F;
+}
+
+.top .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.top .description .cta {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+
+/* --- Aricles --- */
+
+.enchere {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.line {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 48px)/ 4);
+    height: 450px;
+}
+
+.image {
+    background: #ECF1F9;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    height: 100%;
+    transition: all .3s;
+}
+
+.image:hover {
+    background: #9CACC9;
+}
+
+.like {
+    display: flex;
+    justify-content: end;
+}
+
+.like img {
+    max-height: 20px;
+}
+
+.description {
+    padding: 8px;
+}
+
+
+/* ------- DETAILS ------- */
+
+/* --- Breadcrumbs --- */
+
+.breadcrumbs {
+    width: 100%;
+}
+
+.breadcrumbs .back {
+    padding: 0 8px;
+    text-decoration: none;
+    color: #060B13;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+.breadcrumbs .back img {
+    height: 10px;
+    margin-right: 6px;
+}
+
+/* --- Slider --- */
+
+.produit {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.slider {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.slider .image {
+    width: 25%;
+    height: 300px;
+    background: #ECF1F9;
+}
+
+.slider .image:hover {
+    background: #9CACC9;
+}
+
+
+/* --- Info produit --- */
+
+.info-pdt {
+    display: flex;
+    gap: 12px;
+}
+
+.info-pdt .titre-pdt {
+    width: 50%;
+}
+
+.info-pdt .desc-pdt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.desc-pdt .prix-pdt {
+    color: #060B13;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.desc-pdt .text-pdt {
+    color: #060B13;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.desc-pdt .action-pdt {
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}
+
+
+/* --- Produits similaires --- */
+
+.more {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
