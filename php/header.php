@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="menu">
-            Ajouter une enchère
+            <a href="./newEnchere.php">Créer une enchère</a>
         </div>
         <div class="logo">
             <a href="../index.php">
@@ -18,6 +18,6 @@
             </a>
         </div>
         <div class="menu">
-            Mon compte
+            <a href="#">Mon compte</a>
         </div>
     </header>
