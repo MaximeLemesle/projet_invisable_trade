@@ -16,6 +16,7 @@
                 <h2 class="h2-white">
                     Produit du mois
                 </h2>
+                <div class="invisible"></div>
                 <div class="description">
                     <h3 class="h3-white">
                         Nom du Produit 123
@@ -33,6 +34,7 @@
                 <h2 class="h2-white">
                     Notre coup de cœur
                 </h2>
+                <div class="invisible"></div>
                 <div class="description">
                     <h3 class="h3-white">
                         Nom du Produit 123
@@ -59,6 +61,7 @@
                             <div class=\"like\">
                                 <img src=\"../assets/images/heart.png\" alt=\"like\">
                             </div>
+                            <div class=\"invisible-dark\"></div>
                             <div class=\"cta\">
                                 <a href=\"./details.php?id=".$ench[5]."&id_enchere=".$ench[0]."\" class=\"btn-white\">Enchérir</a>
                             </div>
