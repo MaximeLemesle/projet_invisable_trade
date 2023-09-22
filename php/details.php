@@ -15,10 +15,18 @@
         <section class="produit">
 
             <div class="slider">
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="../assets/images/main-2.png" alt="">
+                </div>
+                <div class="image">
+                    <img src="../assets/images/main-1.png" alt="">
+                </div>
+                <div class="image">
+                    <img src="../assets/images/main-3.png" alt="">
+                </div>
+                <div class="image">
+                    <img src="../assets/images/main-4.png" alt="">
+                </div>
             </div>
 
             <div class="info-pdt">
