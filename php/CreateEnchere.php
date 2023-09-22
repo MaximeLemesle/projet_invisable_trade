@@ -85,5 +85,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 //Création de l'enchère avec les infos du form
 create_enchere($date_debut, $date_fin, $prix, $id_user, $nom, $description, $image);
-
+//Redirection
+header('Location: accueil.php');
 ?>
