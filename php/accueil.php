@@ -19,13 +19,13 @@
                 <div class="invisible"></div>
                 <div class="description">
                     <h3 class="h3-white">
-                        Nom du Produit 123
+                        <?=object_info(1)[0][1]?>
                     </h3>
                     <p class="prix-white">
-                        350€
+                        <?=info_enchere(1)[0][3]."€"?>
                     </p>
                     <div class="cta">
-                        <a href="./details.php" class="btn-white">Enchérir</a>
+                        <?php echo "<a href=\"./details.php?id=1&id_enchere=1\" class=\"btn-white\">Enchérir</a>"?>
                     </div>
                 </div>
             </div>
@@ -37,13 +37,13 @@
                 <div class="invisible"></div>
                 <div class="description">
                     <h3 class="h3-white">
-                        Nom du Produit 123
+                        <?=object_info(7)[0][1]?>
                     </h3>
                     <p class="prix-white">
-                        350€
+                        <?=info_enchere(7)[0][3]."€"?>
                     </p>
                     <div class="cta">
-                        <a href="./details.php" class="btn-white">Enchérir</a>
+                        <a href="./details.php?id=7&id_enchere=7" class="btn-white">Enchérir</a>
                     </div>
                 </div>
             </div>
