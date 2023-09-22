@@ -36,3 +36,15 @@ function create_enchere($date_debut, $date_fin, $prix, $id_users, $nom, $descrip
         'id_users' => $id_users
     ]);
 }
+
+function info_enchere($id_enchere)
+{
+    //Requête SQL
+    $sql = 'SELECT * FROM enchere WHERE id = ' . $id_enchere;
+    //Exécution de la Requête
+    $query = $GLOBALS['pdo']->query($sql);
+    //Récupération du résultat
+    $info = $query->fetchAll();
+    //Renvoie des données
+    return $info;
+}

@@ -33,7 +33,7 @@
 
                     <div class="desc-pdt">
                         <div class="prix-pdt">
-                            <?php echo list_enchere($_GET['id'])[0][3]."€"; ?>   
+                            <?php echo info_enchere($_GET['id_enchere'])[0][3]."€"; ?>   
                         </div>
                         <div class="text-pdt">
                             <?php 
