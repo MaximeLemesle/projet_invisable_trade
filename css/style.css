@@ -329,7 +329,7 @@ a {
 }
 
 .slider .image {
-    width: 25%;
+    width: calc((100% - 36px)/ 4);
     height: 350px;
     display: flex;
     justify-content: flex-end;
