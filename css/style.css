@@ -204,11 +204,20 @@ a {
     background: #9CACC9;
     padding: 24px 32px;
     width: 50%;
-    height: 500px;
+    height: fit-content;
 }
 
 .top .article-top:first-child {
     background: #3D598F;
+}
+
+.top .invisible {
+    height: 50px;
+    width: 250px;
+    border-radius: 300px;
+    background: rgba(255, 255, 255, 0.50);
+    filter: blur(50px);
+    margin: 400px auto 50px;
 }
 
 .top .description {
@@ -243,7 +252,7 @@ a {
     display: flex;
     flex-direction: column;
     width: calc((100% - 48px)/ 4);
-    height: 450px;
+    height: fit-content;
 }
 
 .image {
@@ -253,7 +262,7 @@ a {
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    height: 100%;
+    height: fit-content;
     transition: all .3s;
 }
 
@@ -268,6 +277,15 @@ a {
 
 .like img {
     max-height: 20px;
+}
+
+.invisible-dark {
+    height: 32px;
+    width: 150px;
+    border-radius: 300px;
+    background: rgba(61, 89, 143, 0.30);
+    filter: blur(30px);
+    margin: 250px auto 32px;
 }
 
 .description {
