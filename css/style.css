@@ -212,12 +212,12 @@ a {
 }
 
 .top .invisible {
-    height: 300px;
-    width: 200px;
+    height: 50px;
+    width: 250px;
     border-radius: 300px;
-    background: rgba(255, 255, 255, 0.40);
-    filter: blur(70px);
-    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.50);
+    filter: blur(50px);
+    margin: 400px auto 50px;
 }
 
 .top .description {
@@ -252,7 +252,7 @@ a {
     display: flex;
     flex-direction: column;
     width: calc((100% - 48px)/ 4);
-    height: 450px;
+    height: fit-content;
 }
 
 .image {
@@ -262,7 +262,7 @@ a {
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    height: 100%;
+    height: fit-content;
     transition: all .3s;
 }
 
@@ -280,12 +280,12 @@ a {
 }
 
 .invisible-dark {
-    height: 150px;
-    width: 100px;
+    height: 32px;
+    width: 150px;
     border-radius: 300px;
-    background: rgba(61, 89, 143, 0.50);
-    filter: blur(70px);
-    margin: 100px auto;
+    background: rgba(61, 89, 143, 0.30);
+    filter: blur(30px);
+    margin: 250px auto 32px;
 }
 
 .description {
