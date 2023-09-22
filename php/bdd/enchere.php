@@ -5,7 +5,7 @@ require_once 'connect.php';
 function list_enchere()
 {
     //Requête SQL
-    $sql = 'SELECT * FROM enchere';
+    $sql = 'SELECT * FROM Enchere';
     //Exécution de la Requête
     $query = $GLOBALS['pdo']->query($sql);
     //Récupération du résultat
@@ -21,8 +21,8 @@ function create_enchere($date_debut, $date_fin, $prix, $id_users, $nom, $descrip
     $id_objet = create_object($nom, $description, $image, 1);//Création de l'objet
 
     //Requête SQL
-    $sql = 'insert into enchere(date_debut,date_fin,prix_actuel,prix_initial,id_objet, id_users)
-            values(:date_debut, :date_fin, :prix_actuel, :prix_initial, :id_objet, :id_users)';
+    $sql = 'INSERT INTO Enchere(date_debut,date_fin,prix_actuel,prix_initial,id_objet, id_users)
+            VALUES(:date_debut, :date_fin, :prix_actuel, :prix_initial, :id_objet, :id_users)';
 
     //Préparation de la requête
     $statement = $GLOBALS['pdo']->prepare($sql);
@@ -40,7 +40,7 @@ function create_enchere($date_debut, $date_fin, $prix, $id_users, $nom, $descrip
 function info_enchere($id_enchere)
 {
     //Requête SQL
-    $sql = 'SELECT * FROM enchere WHERE id = ' . $id_enchere;
+    $sql = 'SELECT * FROM Enchere WHERE id = ' . $id_enchere;
     //Exécution de la Requête
     $query = $GLOBALS['pdo']->query($sql);
     //Récupération du résultat
