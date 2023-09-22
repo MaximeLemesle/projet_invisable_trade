@@ -66,6 +66,7 @@
                                 <div class=\"like\">
                                     <img src=\"../assets/images/heart.png\" alt=\"like\">
                                 </div>
+                                <div class=\"invisible-dark\"></div>
                                 <div class=\"cta\">
                                     <a href=\"./details.php?id=".$ench[5]."\" class=\"btn-white\">Enchérir</a>
                                 </div>
