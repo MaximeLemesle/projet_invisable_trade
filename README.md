@@ -16,3 +16,5 @@ Si on utiliser MYSQL:
 
 > Il faut aussi faire attention au nom des tables dans les requêtes SQL.
 > Les requêtes se trouvent dans les fichiers `objet.php` et `enchere.php`.
+
+Il faut faire attention lors de la création d'une enchère, que la table users n'est pas vide.
