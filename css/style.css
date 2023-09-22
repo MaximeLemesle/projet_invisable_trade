@@ -330,8 +330,12 @@ a {
 
 .slider .image {
     width: 25%;
-    height: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: flex-end;
     background: #ECF1F9;
+    padding: 0;
+    opacity: .9;
 }
 
 .slider .image:hover {
